@@ -1,0 +1,18 @@
+body{
+    background-image:url("C:\Development\common-web-resources\Images\gradient-design.jpeg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+iframe{
+    border:none;
+    width:fit-content;
+    height:fit-content;
+}
+.t1{
+    border:thin;
+    border-width:3px;
+    border-color:black;
+}
