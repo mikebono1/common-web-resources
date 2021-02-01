@@ -1,21 +1,29 @@
-html{
-    background-image:url('C:\Development\common-web-resources\Images\gradient-design.jpeg');
+body{ 
+    background-image:url("gradient-design.jpeg");
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:cover;
+
     color:black;
     font-family:Arial, Helvetica, sans-serif;
-}
-title{
+    
     text-align:center;
 }
 iframe{
     border:none;
-    width:1500px;
+    width:1350px;
     height:500px;
 }
 table, th, td{
-    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
     border:2px solid black;
     border-collapse:collapse;
+}
+#div1{
+    text-align:left;
+}
+h1, h2, p{
+    background-color:rgba(255, 255, 255, 0.637);
+    margin:25px;
 }
