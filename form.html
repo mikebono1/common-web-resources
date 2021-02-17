@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="\css\stylesheet.css">
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <p>This form will test your knowledge.</p>
+        <form id= "form1">
+            <fieldset>
+                <label for="q1">Question 1:</label><br>
+                <input type="text" id="q0" name="q1" placeholder="Answer..."><br>
+                <label for="q2">Question 2:</label><br>
+                <textarea id="q2" name="q1" placeholder="Explain..." width="50px" height="74px"></textarea><br>
+                <label for="q3">Question 3:</label><br>
+                <input type="password" id="q2" name="q3" placeholder="SS#"><br>
+                <input type="submit" value="Submit"><br>
+            </fieldset>
+        </form>
+        <button onclick="displayArray()">Submit</button>
+        <p id="results"></p>
+        <script>
+            function displayArray(){
+                var i, j;
+                var displayResults = "";
+                var results = ["a", "b", "c"];
+                for(j = 0; j <= 2; j++){
+                    results[j] = document.getElementById("form1");
+                }
+                for(i = 0; i <= (results.length - 1); i++){
+                    displayResults = displayResults + results[i];
+                }
+                document.getElementById("results").innerHTML = displayResults;
+            }
+        </script>
+    </body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en-US">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="C:\Development\common-web-resources\css\stylesheet.css">
+        <link rel="stylesheet" href="\css\stylesheet.css">
         <title>Common Resources</title>
     </head>
     <body>
@@ -15,7 +15,7 @@
                 <th>Multiplication</th>
                 <th>Division</th>
             </tr>
-            <tr>
+            <tr> 
                 <td>a + b = c</td>
                 <td>a - b = c</td>
                 <td>a * b = c</td>
@@ -25,7 +25,7 @@
         <h2>Calculator Website</h2>
         <iframe src="https://www.desmos.com/calculator" title="Calculator"></iframe>
         <div id="div1"> <!--Dummy Text-->
-            <p style="background-color: rgba(255,255,255,50%);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in gravida diam. Nunc vehicula purus quis neque condimentum, quis aliquam arcu facilisis. Vestibulum eget mollis mauris, eu molestie nibh. Donec felis tellus, vehicula sed turpis non, viverra molestie nisi. Vestibulum vitae lobortis nisl. Aenean justo enim, pretium nec risus eu, sodales tincidunt tellus. Aenean egestas interdum est, eget posuere leo faucibus eu. Vivamus rutrum eros est, vitae ultricies nulla semper congue. Pellentesque interdum commodo dictum. Pellentesque sollicitudin urna quis lorem gravida, vitae condimentum nunc porttitor. Maecenas vehicula tempor nibh in semper. Phasellus nec augue quis tellus suscipit posuere. Praesent luctus lorem nisl, sed imperdiet velit sodales vel.
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in gravida diam. Nunc vehicula purus quis neque condimentum, quis aliquam arcu facilisis. Vestibulum eget mollis mauris, eu molestie nibh. Donec felis tellus, vehicula sed turpis non, viverra molestie nisi. Vestibulum vitae lobortis nisl. Aenean justo enim, pretium nec risus eu, sodales tincidunt tellus. Aenean egestas interdum est, eget posuere leo faucibus eu. Vivamus rutrum eros est, vitae ultricies nulla semper congue. Pellentesque interdum commodo dictum. Pellentesque sollicitudin urna quis lorem gravida, vitae condimentum nunc porttitor. Maecenas vehicula tempor nibh in semper. Phasellus nec augue quis tellus suscipit posuere. Praesent luctus lorem nisl, sed imperdiet velit sodales vel.
                 Nunc aliquet interdum dui, nec aliquam dolor porttitor eu. Sed hendrerit tempus interdum. Ut in augue quam. Integer sagittis molestie urna id tincidunt. Aenean ut ornare felis. Pellentesque posuere mi ultricies luctus vehicula. Mauris aliquam, arcu ut maximus efficitur, urna massa eleifend mi, a aliquet libero est vel diam. Donec euismod laoreet quam, viverra tincidunt mauris porta quis. Morbi vehicula est ut ligula varius efficitur. Vivamus mi dolor, rutrum nec metus quis, commodo tincidunt mauris. Curabitur ex urna, viverra eu pharetra aliquam, dignissim in neque. Donec hendrerit felis id quam malesuada tristique. Nulla feugiat laoreet magna non rutrum. In scelerisque metus quis elit consequat, eget cursus velit sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
             </p>
             <p>
@@ -55,5 +55,14 @@
         </div>
         <button onclick="document.location='#h1'">Back to top</button>
         <button onclick="document.location='form.html'">Test your skill</button>
+        <button onclick="crash()">Crash</button>
+        <script>
+            function crash(){
+                var i;
+                for(i=0; i < 1; ){
+                    document.getElementById("h1").innerHTML = "No";
+                }
+            }
+        </script>
     </body>
 </html>
